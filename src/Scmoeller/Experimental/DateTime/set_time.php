@@ -1,5 +1,9 @@
 <?php
 
+namespace Scmoeller\Experimental\DateTime;
+
+use DateTime;
+
 $expirationDate = new DateTime('now');
 
 echo "Aktuelles Datum:\n", $expirationDate->format('d.m.Y H:i:s'), "\n";
