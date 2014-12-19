@@ -1,0 +1,13 @@
+{
+    "name": "vendor/experimental",
+    "description": "Description of project experimental.",
+    "authors": [
+        {
+            "name": "moeller",
+            "email": "moeller@ift-nord.de"
+        }
+    ],
+    "require": {
+        "tedivm/stash": "0.12.*"
+    }
+}
