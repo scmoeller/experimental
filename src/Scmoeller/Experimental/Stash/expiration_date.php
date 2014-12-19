@@ -26,7 +26,11 @@ if ($item->isMiss()) {
     $data = $item->get();
 }
 
-echo "Verfallsdatum: ", $expirationDate->format('d.m.Y H:i:s'), "\n";
+if ($item->getExpiration() !== false) {
+    echo "Verfallsdatum: ", $item->getExpiration()->format('d.m.Y H:i:s'), "\n";
+} else {
+    echo "Kein Verfallsdatum gesetzt.\n";
+}
 
 print_r($data);
 
